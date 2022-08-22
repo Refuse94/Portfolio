@@ -49,8 +49,48 @@ header{
     
 }
 
+/* ========================== HOME_TEXT ================================================*/
+#home_text{
+    margin: 15%;
+}
 
+#home_text h2{
+    font-size: 2rem;
+    color: orangered;
+}
 
+ #home_text h1{
+    font-size: 3rem;
+    margin-left: 1rem;
+ }
 
-/* ===============NAV BAR ================================================*/
+ #home_text span{
+    color: rgb(12, 214, 120);
+ }
+#home_text h3{
+    font-weight: bold;
+}
 
+#home_text a{
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+    background: orangered;
+    border-radius: 20px;
+    padding: 1rem;
+    position: relative;
+    top: 3rem;
+    left: 3rem;
+}
+
+#photo img{
+    width: 17rem;
+    margin-top: 15rem;
+    border-radius: 14% 1% 64% 30%;
+
+    
+}
+
+#main_content{
+    display: flex;
+}
