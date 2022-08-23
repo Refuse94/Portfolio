@@ -33,8 +33,22 @@ aboutClass.addEventListener("click", function(event){
     })
 })
 
+let contactButton = document.querySelector(".contact_button");
+let contactHash = document.querySelector("#contact_me").offsetTop;
 
-let contactFormular = document.querySelector(".contact_formular")
+contactButton.addEventListener("click", function(event){
+    event.preventDefault();
+    window.scrollTo({
+        top: contactHash -200,
+        behavior: "smooth"
+    })
+})
+
+
+let contactFormular = document.querySelector(".contact_formular");
+var customers = [
+   
+]
 
 
 contactFormular.addEventListener("submit", function(event){
@@ -45,7 +59,25 @@ contactFormular.addEventListener("submit", function(event){
     let yourSubject = event.target.yourSubject.value
     let yourMessage = event.target.message.value
 
-    console.log("odoslalo sa to" + " " + firstName + " " + yourEmail + " " + yourPhone+ " " + yourSubject+ " " + yourMessage);
+    let result = firstName + " | " + yourEmail + " | "+ yourPhone + " | " + yourSubject+ " | " + yourMessage;
+    customers.push(result);
+
+
+
+    
+    customersJ = JSON.stringify(customers);
+    localStorage.setItem("Users", customersJ);
+    
+    let customersFromLS = localStorage.getItem("Users")
+    let myUserFromLS = JSON.parse(customersFromLS);
+    
+    console.log(myUserFromLS);
+
+    console.log(customers[0]);
+
+   
+
+    // console.log("odoslalo sa to" + " " + firstName + " " + yourEmail + " " + yourPhone+ " " + yourSubject+ " " + yourMessage);
 })
 
 
