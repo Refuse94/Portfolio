@@ -1,6 +1,6 @@
 body{
     width: 120rem;
-    background: url(./img/background.jpg);
+    /* background: url(./img/background.jpg); */
     background-repeat: no-repeat;
     background-size: cover;
     background-size: 105%;
@@ -17,6 +17,12 @@ body{
 *   HEADER
 ******************************/ 
 
+header{
+    display:flex;
+    justify-content: space-between;
+}
+
+/* =========================== LOGO SETTINGS ====================================*/
 #logo{
     font-size: 1.5rem;
     margin-left: 15rem;
@@ -27,11 +33,8 @@ body{
     color:orangered;
 }
 
-header{
-    display:flex;
-    justify-content: space-between;
-}
-/* =========================== NAV_BAR ================================================*/
+
+/* =========================== NAV_BAR ====================================*/
 #nav_bar a:hover{
    border: 3px solid orangered;
    border-radius: 20px;
@@ -81,7 +84,7 @@ header{
 }
 
 
-
+/* ========================== PHOTO SETTINGS ================================================*/
 #photo img{
     width: 17rem;
     margin-top: 15rem;
@@ -89,11 +92,12 @@ header{
 
     
 }
-
+/* ========================== MAIN CONTENT SETTINGS ================================================*/
 #main_content{
     display: flex;
 }
 
+/* ========================== SOCIAL ICONS SETTINGS ================================================*/
 .social_icons li{
     text-decoration: none;
     list-style: none;
@@ -118,4 +122,78 @@ header{
     position: relative;
     top: -250px;
     left: 240px;
+}
+
+/* ========================== ABOUT SETTINGS ================================================*/
+
+#about{
+    max-width :87.5rem;
+    margin: auto;
+    padding: auto;
+    display: flex;
+    margin-top: 12rem;
+}
+
+.about_container h2{
+    color: orangered;
+}
+
+.about_container h1{
+    font-size: 2rem;
+}
+.about_container p{
+    max-width: 30rem;
+}
+
+.about_container{
+    margin-left: 20rem;
+}
+
+.about_container p {
+    font-size: 1.3rem;
+    font-style: oblique;
+    font-display:inherit;
+    text-shadow: 2px 2px 4px #c4c1c1;
+   
+}
+.about_container h3{
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+    background: orangered;
+    border-radius: 3.125rem;
+    padding: 1rem;
+    margin-right: 2rem;
+    width: 8.25rem
+
+}
+
+.about_container .year{
+    background: white;
+    padding: 1rem;
+    border-radius: 20%;
+    position: relative;
+    top: -419px;
+    left: -865px;
+    max-width: 9rem;
+}
+
+.about_container .year span{
+    color:rgb(12, 214, 120);
+    font-size: 2rem;
+}
+
+.about_container .projects{
+    background: white;
+    padding: 1rem;
+    border-radius: 20%;
+    position: relative;
+    top: -319px;
+    left: -439px;
+    max-width: 9rem;
+}
+
+.about_container .projects span{
+    color:rgb(201, 8, 204);
+    font-size: 2rem;
 }
