@@ -39,7 +39,7 @@ let contactHash = document.querySelector("#contact_me").offsetTop;
 contactButton.addEventListener("click", function(event){
     event.preventDefault();
     window.scrollTo({
-        top: contactHash -200,
+        top: contactHash -500,
         behavior: "smooth"
     })
 })
@@ -62,6 +62,8 @@ contactFormular.addEventListener("submit", function(event){
     let result = firstName + " | " + yourEmail + " | "+ yourPhone + " | " + yourSubject+ " | " + yourMessage;
     customers.push(result);
 
+    // customers.push(firstName, yourEmail, yourMessage, yourPhone, yourSubject);
+
 
 
     
@@ -81,3 +83,36 @@ contactFormular.addEventListener("submit", function(event){
 })
 
 
+
+
+// BACK TO TOP
+
+
+var backToTop = document.createElement("p");
+backToTop.classList.add("back_to_top");
+backToTop.innerHTML = "Top";
+document.querySelector("body").appendChild(backToTop);
+
+window.addEventListener("scroll", function(){
+    let scrolled = window.scrollY
+    if( scrolled >850){
+        let toTop = backToTop;
+        toTop.style.display ="block"
+        
+        toTop.addEventListener("click", function(){
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            
+            })
+           
+            
+        })
+
+    }
+    if( scrolled <700){
+        backToTop.style.display= "none"
+        console.log(scrolled)
+    }
+   
+})
