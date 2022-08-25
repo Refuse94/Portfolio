@@ -1,11 +1,9 @@
 body{
-    width: 120rem;
-    /* background: url(./img/background.jpg); */
-    background-repeat: no-repeat;
+    max-width: 118.75rem;
+    background: url(./img/wallpaper.jpg);
+    background-repeat: repeat;
     background-size: cover;
     background-size: 105%;
-
-     
     color: black;
     margin: 0;
     padding: 0;
@@ -124,6 +122,7 @@ header{
     position: relative;
     top: -250px;
     left: 240px;
+    max-width: 100rem;
 }
 
 /* ========================== ABOUT SETTINGS ================================================*/
@@ -233,5 +232,85 @@ header{
     transform: scale(1.2);
     transition-duration: 1.1s;
     border: 5px solid rgb(184, 172, 172);
+}
+
+
+/* ========================== CONTACT SETTINGS ================================================*/
+
+.contact_me_container{
+    max-width: 90rem;
+    margin: auto;
+}
+
+.contact_me_container h2{
+    color: orangered;
+    margin-left: 45%;
+    margin-top: 20%;
+}
+
+.contact_me_container h1{
+     margin-left: 39%;
+}
+
+.contact_me_container p{
+    margin-left: 15%;
+    margin-bottom: 6rem;
+    padding: auto;
+    color: rgb(92, 87, 87);
+    max-width: 60rem;
+    font-size: -0.7rem;
+    font-style: oblique;
+    font-display: inherit;
+    text-shadow: 2px 2px 4px #c4c1c1;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.contact_me_container_two{
+    max-width: 90rem;
+    display:flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.contact a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    color: black;
+    margin: 1rem;
+    background: rgb(231, 159, 132);
+    border-radius: 20%;
+    padding: .6rem;
+}
+
+.contact a:nth-child(2){
+    background:greenyellow;
+}
+.contact a:nth-child(3){
+    background: rgb(233, 56, 233);
+}
+
+/* BACK TO TOP */
+
+.back_to_top {
+    font-size: 2rem;
+    background: orangered;
+    border-radius: 20%;
+    max-width: 6.25rem;
+    position: fixed;
+    top: 609px;
+    left: 1718px;
+    padding: .6rem;
+    cursor: pointer;
+    display: none;
+
+}
+
+.back_to_top:hover{
+    opacity: 1;
+    transform: scale(1.2);
+    transition-duration: 1.1s;
+    border: 5px solid rgb(12, 12, 12);
 }
 
