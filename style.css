@@ -38,7 +38,7 @@ header{
    border-radius: 20px;
    cursor: pointer;
    transform: scale(2.2);
-   transition-duration: .2s;
+   transition-duration: .1s;
 }
 
 #nav_bar a{
@@ -111,11 +111,11 @@ header{
 .social_icons a{
     color: white;
     text-decoration: none;
-    font-size: 2rem;
-    background: orangered;
-    border-radius: 20px;
-    padding: 1rem;
-    margin-right: 2rem;
+    font-size: 1.4rem;
+    background: #5e6a9c;
+    border-radius: 23px;
+    padding: 0.6rem;
+    margin-right: 0.7rem;
   }
 
 .social_icons{
@@ -123,6 +123,10 @@ header{
     top: -250px;
     left: 240px;
     max-width: 100rem;
+}
+.social_icons .about{
+    background: orangered;
+    
 }
 
 /* ========================== ABOUT SETTINGS ================================================*/
@@ -246,6 +250,7 @@ header{
     color: orangered;
     margin-left: 45%;
     margin-top: 20%;
+    font-size: 2rem;
 }
 
 .contact_me_container h1{
@@ -270,26 +275,47 @@ header{
     max-width: 90rem;
     display:flex;
     justify-content: space-between;
+    flex-direction: row;
     margin: auto;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+   
 }
 
 .contact a{
     text-decoration: none;
-    font-size: 1.5rem;
-    margin-right: 1rem;
+    font-size: 2rem;
     color: black;
-    margin: 1rem;
-    background: rgb(231, 159, 132);
-    border-radius: 20%;
-    padding: .6rem;
+    font-weight: bolder;
+    margin-bottom: .625rem;
+   
+}
+.contact .fa-solid{
+    margin-right: 2rem;
+    text-align: left;
+    background: rgb(241, 175, 151);
+    padding: 16px 22px;
+    border-radius: 39px;
+    color: rgb(231, 68, 8);
 }
 
-.contact a:nth-child(2){
-    background:greenyellow;
+.contact .fa-envelope{
+    background: rgb(24, 224, 147);
+    color: rgb(3, 77, 3);
 }
-.contact a:nth-child(3){
-    background: rgb(233, 56, 233);
+
+.contact .fa-phone{
+    background: rgb(151, 67, 247);
+    color: rgb(58, 2, 46);
 }
+.contact .fa-bag-shopping{
+    background: rgb(8, 8, 8);
+    color: rgb(247, 244, 246);
+}
+
 
 /* BACK TO TOP */
 
@@ -304,6 +330,8 @@ header{
     padding: .6rem;
     cursor: pointer;
     display: none;
+    color: white;
+    font-weight: bold;
 
 }
 
@@ -313,4 +341,42 @@ header{
     transition-duration: 1.1s;
     border: 5px solid rgb(12, 12, 12);
 }
+
+/* CONTACT FORMULAR */
+
+.contact_formular form input{ 
+    background: rgb(245, 242, 242);
+    color: black;
+    padding: 2rem;
+    font-size: 1rem;
+    border-radius: 20px;
+}
+
+.contact_formular form textarea{
+    background: rgb(245, 242, 242);
+    padding: 2rem;
+    color: black;
+    font-size: 1rem;
+    border-radius: 20px;
+
+}
+
+.contact_formular form input:last-child{
+    background: orangered;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    padding: 1rem;
+
+}
+
+.contact_formular form input:last-child:hover{
+    opacity: 1;
+    transform: scale(1.1);
+    transition-duration: .2s;
+    border: 5px solid rgb(12, 12, 12);
+}
+
+
 

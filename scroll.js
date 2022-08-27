@@ -1,9 +1,9 @@
 // ============ FUNKCIE NA SCROLLOVANIE ODKAZOV NA STRANKE ===========================
 
+// ================  ABOUT
+
 let aboutButton = document.querySelector(".about_button");
 let aboutHash = document.querySelector("#about").offsetTop;
-
-
 aboutButton.addEventListener("click", function(event){
     event.preventDefault();
     window.scrollTo({
@@ -12,9 +12,11 @@ aboutButton.addEventListener("click", function(event){
     })
 })
 
+
+// ==============PORTFOLIO
+
 let portfolioButton = document.querySelector(".portfolio_button");
 let portfolioHash = document.querySelector("#portfolio").offsetTop;
-
 portfolioButton.addEventListener("click", function(event){
     event.preventDefault();
     window.scrollTo({
@@ -23,8 +25,9 @@ portfolioButton.addEventListener("click", function(event){
     })
 })
 
-let aboutClass = document.querySelector(".about");
+// =============== ABOUT MINI BUTTON
 
+let aboutClass = document.querySelector(".about");
 aboutClass.addEventListener("click", function(event){
     event.preventDefault();
     window.scrollTo({
@@ -33,9 +36,10 @@ aboutClass.addEventListener("click", function(event){
     })
 })
 
+// ================== CONTACT BAR
+
 let contactButton = document.querySelector(".contact_button");
 let contactHash = document.querySelector("#contact_me").offsetTop;
-
 contactButton.addEventListener("click", function(event){
     event.preventDefault();
     window.scrollTo({
@@ -68,7 +72,7 @@ window.addEventListener("scroll", function(){
      }
     if( scrolled <700){
         backToTop.style.display= "none"
-        console.log(scrolled)
+        
     }
    
 })
