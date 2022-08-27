@@ -76,3 +76,17 @@ window.addEventListener("scroll", function(){
     }
    
 })
+
+// REVIEWS ========================
+
+
+let revButton = document.querySelector(".reviews_button");
+let revClass = document.querySelector(".reviews").offsetTop;
+revButton.addEventListener("click", function(event){
+    event.preventDefault();
+    window.scrollTo({
+        top: revClass +600,
+        behavior: "smooth" 
+    })
+})
+

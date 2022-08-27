@@ -378,5 +378,67 @@ header{
     border: 5px solid rgb(12, 12, 12);
 }
 
+/*  COLOR FLAGS  */
+.slovak .fa-solid{
+    color:blue;
+}
 
 
+.eng .fa-solid{
+    color:rgba(206, 41, 41, 0.603);
+}
+
+
+/* ========== REVIEWS SETTING ========================= */
+.reviews  {
+    max-width: 90rem;
+    margin: auto;
+    
+}
+
+.reviews h1{
+    margin-left: 41%;
+    color: orangered;
+    font-weight: bolder;
+    font-size: 2rem;
+    margin-top: 14rem;
+}
+
+.reviews p{
+    margin-left: 15%;
+   
+    padding: auto;
+    color: rgb(92, 87, 87);
+    max-width: 60rem;
+    font-size: -0.7rem;
+    font-style: oblique;
+    font-display: inherit;
+    text-shadow: 2px 2px 4px #c4c1c1;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.reviews_container{
+    display: flex;
+}
+.fa-quote-left{
+    color: orangered;
+    font-size: 3rem;
+    margin-left: 4rem;
+}
+
+.reviews_container a{
+    font-size: 2rem;
+    color: black;
+    text-decoration: none;
+    margin-left: 12rem;
+    text-align: center;
+}
+
+.fa-user{
+    margin-right: 1rem;
+}
+
+.reviews{
+    padding: 10rem;
+}

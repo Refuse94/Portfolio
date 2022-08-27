@@ -16,8 +16,8 @@ const reviewsSlovak = {
 
 const homeTextSlovak ={
     h2: "Ahoj volám sa",
-    h3: "Som creatívna dizajnérka zo Slovenska",
-    h4: "Som kreatívna dizajnérka so sídlom na Slovensku a som veľmi zanietená a oddaná svojej práci "
+    h3: "Som kreatívna dizajnérka zo Slovenska",
+    h4: "Hand-made dizajnérka so sídlom na Slovensku a som veľmi zanietená a oddaná svojej práci "
 }
 
 const aButton = document.querySelector(".about_button")
